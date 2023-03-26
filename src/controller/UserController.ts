@@ -13,7 +13,7 @@ class UserController{
         
         //Send the users object
         res.status(200).send({
-            sellers: sellers
+            data: sellers
           });
         } catch (error) {
             next(error)
