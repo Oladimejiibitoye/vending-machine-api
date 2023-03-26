@@ -1,6 +1,6 @@
-# MVP WALLET SERVICE
+# VENDING MACHINE API
 
-## Lendsqr Backend Engineer Assessment
+## MVP MATCH Backend Engineer Assessment
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
