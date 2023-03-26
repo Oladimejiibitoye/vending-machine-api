@@ -8,11 +8,11 @@
     "test:watch": "jest --watch",
     "start": "ts-node src/index.ts",
     "start:dev": "nodemon -w *.ts -w .env src/index.ts",
-    "prod": "tsc && npm run migration && node ./build/index.js",
+    "prod": "tsc && npm run migration && node ./build/src/index.js",
     "tsc": "tsc",
     "typeorm": "typeorm-ts-node-commonjs",
-    "migration": "ts-node ./node_modules/typeorm/cli.js migration:run -d build/data-source.js",
-    "add-migration": "typeorm migration:generate src/migration/migration -d build/data-source.js",
+    "migration": "ts-node ./node_modules/typeorm/cli.js migration:run -d build/src/data-source.js",
+    "add-migration": "typeorm migration:generate src/migration/migration -d build/src/data-source.js",
     "new-migration": "typeorm migration:create src/migration/migration",
     "revert-migration": "typeorm migration:revert",
     "create-entity": "typeorm entity:create src/entity "
@@ -58,6 +58,8 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.3",
+    "pg": "^8.10.0",
+    "postgres": "^3.3.4",
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^2.0.0",
     "typeorm": "^0.3.10"

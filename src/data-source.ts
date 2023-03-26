@@ -5,9 +5,9 @@ import { Product } from "./entity/product"
 import { User } from "./entity/user"
 
 export const AppDataSource = new DataSource({
-    type: "mysql",
+    type: "postgres",
     host: dbHost,
-    port: 3306,
+    port: 5432,
     username: dbUsername,
     password: dbPassword,
     database: dbName,
@@ -17,7 +17,7 @@ export const AppDataSource = new DataSource({
       User, Product
      ],
      migrations: [
-      'build/migration/*.js'
+      'build/src/migration/*.js'
      ],
      subscribers: [],
 
